@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Josefin+Slab:ital,wght@0,100;1,500&family=Poppins:wght@100;200&display=swap');
+body{
+  background-color: var(--color-background-body);
+  background: rgb(129,255,0);
+background: linear-gradient(201deg, rgba(129,255,0,1) 8%, rgba(9,9,121,1) 53%, rgba(129,255,0,1) 94%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+   
+}
+.calculator{
+  background-image: linear-gradient(140deg, #000000, #000000);
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 50px 150px 150px #2b2e36;
+  border-top: 5px solid #ffffff;
+  border-left: 5px solid #bbbbbb;
+  border-right: 5px solid #833ab4;
+  border-bottom: 5px solid #bc5a17;
+}
+.calculator .screen{
+  height: 200px;
+  padding-top: 50px;
+  color: #bbbbbb;
+  font-size: 50px;
+  text-align: right;
+  border-top: 2px solid #bbbbbb;
+  border-left: 2px solid #bbbbbb;
+  border-right: 2px solid #bbbbbb;
+  border-radius: 50px;
+}
+.calculator .screen .new{
+  color: #fff;
+  font-size: 80px;
+}
+.calculator .buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  grid-template-rows: repeat(5, 70px);
+  gap: 10px;
+}
+.calculator .buttons button{
+  border-radius: 1000px;
+  border: none;
+  font-family: poppins;
+  font-size: x-large;
+  color: #efefef;
+  background-image: linear-gradient(140deg, #262b38, #323847);
+  box-shadow: inset 5px 5px 5px #323847, inset -5px -5px 20px #323847, 5px 5px 5px #1d1f25;  
+  border-top: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.calculator .buttons button:nth-child(17){
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculator .buttons button:nth-child(-n+3){
+  background-image: linear-gradient(140deg, #3b424d, #5d697a);
+  box-shadow: inset 5px 5px 5px #5d697a, inset -5px -5px 20px #5d697a, 5px 5px 5px #1d1f25;
+}
+.calculator .buttons button:nth-child(4n),
+.calculator .buttons button:nth-child(19){
+  background-image: linear-gradient(140deg, #bc5a17, #e09121);
+  box-shadow: inset 5px 5px 5px #e09121, inset -5px -5px 20px #E99725, 5px 5px 5px #1d1f25;
+}
+
+.calculator .buttons button:active{
+  box-shadow: none;
+}
